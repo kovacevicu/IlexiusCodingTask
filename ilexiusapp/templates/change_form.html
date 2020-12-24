@@ -1,0 +1,9 @@
+{% extends "admin/change_form.html" %} {% block object-tools-items %} 
+{% if user %}
+<li>
+  <a href="http://localhost:8000/login_as/{{user.id}}" class="grp-state-focus"
+    >Login As {{user.username}}</a
+  >
+</li>
+{% endif %}
+{% endblock %}
